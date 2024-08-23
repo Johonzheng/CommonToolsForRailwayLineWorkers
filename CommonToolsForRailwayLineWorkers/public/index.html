@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>铁路线路工常用工具</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            background-color: #F4F4F4;
+            color: #333333;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            /* 垂直居中对齐所有子元素 */
+            justify-content: flex-start;
+            /* 子元素靠左对齐 */
+            flex-wrap: nowrap;
+            /* 防止子元素换行 */
+        }
+
+        .header h1 {
+            text-align: center;
+            /* 确保h1文本居中 */
+            flex-grow: 1;
+            /* 使h1元素占据剩余空间 */
+        }
+
+        .header img {
+            height: 90px;
+            margin-right: auto;
+            /* 将图片推向左侧 */
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+            padding: 10px 0;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        .nav a.active {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel {
+            width: 100%;
+            height: 300px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: #007bff;
+        }
+
+        .date {
+            text-align: right;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .updates {
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../assets/daxiuduan.jpg" alt="Logo">
+        <h1>铁路线路工常用工具</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html" class="active">主页</a>
+        <a href="commondatecalculation.html">常用数据计算</a>
+        <a href="rulesdownload.html">规则规章下载</a>
+        <a href="encyclopedia.html">工务名词百科</a>
+        <a href="forum.html">论坛反馈</a>
+        <a href="about.html">简介</a>
+    </div>
+    <div class="container">
+        <div class="carousel">轮播图（内容待定）</div>
+        <div class="date">当前日期: <span id="current-date"></span></div>
+        <div class="updates">
+            <h2>更新进度</h2>
+            <p>作者：线一车间郑佳恒</p>
+            <p>目前的开发进度、功能更新情况将在此展示。</p>
+            <p>截至2024.8.22已完成既有线改造轨缝计算，项目主页及项目结构建立；项目说明编写</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+
+</html>
